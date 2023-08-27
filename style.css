@@ -1,82 +1,102 @@
-/* Estilo para o corpo da página */
-body {
+/*body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Garante que o conteúdo ocupe pelo menos 100% da altura da tela */
+    background-color: #f0f0f0;
 }
 
-/* Estilo para o título */
-h2 {
+h1 {
     text-align: center;
-    margin-top: 20px;
+    color: #333333;
 }
 
-/* Estilo para as imagens */
 img {
-    max-width: 100%;
-    height: auto;
     display: block;
-    margin: 20px auto;
-    border-radius: 10px; /* Adiciona borda arredondada */
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
 }
 
-/* Estilo para os links */
+h3 {
+    margin-left: 20px;
+    color: #666666;
+}
+
 a {
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    color: #333;
     text-decoration: none;
-    margin-bottom: 10px;
+    color: #0099ff;
 }
 
-/* Estilo para os links quando passa o mouse */
 a:hover {
     color: #ff6600;
+}*/
+
+body {
+    font-family: 'Courier New',  sans-serif;
+  background-color: #535353;
+  margin: 0;
 }
 
-/* Espaçamento entre os restaurantes */
-a + img {
-    margin-top: 10px;
-}
-
-/* Estilo para o rodapé */
-footer {
-    text-align: center;
-    background-color: #000000;
-    color: #fff;
-    padding: 10px 0;
-    width: 100%;
-    font-family: 'Times New Roman';
-}
-
-/* Responsividade para o rodapé em telas menores */
-@media (max-width: 768px) {
-    footer {
-        position: static;
-    }
-}
-
-/* Estilo para o cabeçalho */
 header {
-    background-color: #000000;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    font-family: 'Times New Roman';
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 32px;
+h1 {
+  font-family: 'Courier New', monospace;
+  display: inline-block;
+  text-align: center;
+  color: #ff0000;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-header p {
-    margin: 10px 0 0;
-    font-size: 16px;
+img {
+  display: inline-block;
+  margin-left: 1%;
+  width: 100px;
 }
+
+h3 {
+  margin-left: 20px;
+  color: #ff0000;
+}
+
+a {
+  text-decoration: none;
+  color: #ff0000;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+/* Novo código */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.card {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 15px solid rgb(48, 48, 48);
+  justify-content: space-between;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+
+footer {
+  background-color: rgb(51, 51, 51);
+  color: #ff0000;
+  padding: 25px;
+  text-align: center;
+  font-family: 'Times New Roman'; 
+  
