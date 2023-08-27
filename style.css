@@ -52,6 +52,7 @@ footer {
     color: #fff;
     padding: 10px 0;
     width: 100%;
+    font-family: 'Times New Roman';
 }
 
 /* Responsividade para o rodapé em telas menores */
@@ -59,4 +60,23 @@ footer {
     footer {
         position: static;
     }
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Times New Roman';
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 16px;
 }
