@@ -83,14 +83,16 @@ a:hover {
 .card {
   width: 50%;
   box-sizing: border-box;
-  padding: 10px;
-  border: 15px solid rgb(48, 48, 48);
-  justify-content: space-between;
+  padding: 5px;
+  border: 2px solid rgb(0, 0, 0);
+  justify-content: space-between; 
+  border-radius: 50px 50px 50px 50px;
 }
 
 .card img {
   width: 100px;
   height: 100px;
+  border-radius: 50px 50px 50px 50px;
 }
 
 footer {
