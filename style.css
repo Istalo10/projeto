@@ -48,8 +48,8 @@ h1 {
   display: inline-block;
   text-align: center;
   color: #ff0000;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 50px;
+  
 }
 
 img {
