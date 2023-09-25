@@ -4,58 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria vistia técnica</title>
+    <title>Radio Player</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="header">
-        <h1>Visita técnica | Colorado</h1>
-        <p>Durante minha recente excursão ao Instituto Agropecuário, tive a chance de explorar a fundo a área de cultivo
-            agrícola. Essa experiência se revelou altamente enriquecedora, proporcionando-me uma compreensão mais
-            profunda dos processos de cultivo, destacando sua relevância na agricultura contemporânea e como essas
-            práticas podem incrementar a eficiência das colheitas. </p>
-        <p>
-            Durante minha recente excursão ao Instituto Agropecuário, tive a chance de explorar a fundo a área de
-            cultivo agrícola. Essa experiência se revelou altamente enriquecedora, proporcionando-me uma compreensão
-            mais profunda dos processos de cultivo, destacando sua relevância na agricultura contemporânea e como essas
-            práticas podem incrementar a eficiência das colheitas.
-
-            Além disso, ao longo da visita, também pude aprimorar minhas habilidades na arte da fotografia. As cênicas
-            paisagens do instituto proporcionaram oportunidades únicas para capturar a magnificência da agricultura e da
-            natureza. As imagens que compartilharei adiante representam apenas uma fração dos momentos memoráveis que
-            eternizei.
-        </p>
-        <p>
-            O Instituto Agropecuário é verdadeiramente um local belo e inspirador, onde a ciência e a natureza se
-            entrelaçam harmoniosamente. Espero que desfrute das fotografias que capturei durante minha visita.
-        </p>
+    <div class="player">
+        <div class="controls">
+            <img src="img/embaralhar.png" id="shuffle" alt="Embaralhar">
+            <img src="img/anterior.png" id="prev" alt="Anterior">
+            <img src="img/pausa.png" id="playPause" alt="Play">
+            <img src="img/proximo-botao.png" id="next" alt="Próxima">
+            <img src="img/repetir.png" id="repeat" alt="Repetir">
+        </div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="volume-controls">
+            <button id="expand">Expandir</button>
+            <input type="range" id="volume" min="0" max="1" step="0.1">
+        </div>
     </div>
-    <div class="gallery">
-        <div class="image thumbnail" style="background-image: url('imagens/coelho.jpg');"></div>
-        <div class="image thumbnail" style="background-image: url('imagens/galo.jpeg');"></div>
-        <div class="image thumbnail" style="background-image: url('imagens/galos.jpg');"></div>
-        <div class="image thumbnail" style="background-image: url('imagens/pessoas.jpeg')"></div>
-        <div class="image thumbnail" style="background-image: url('imagens/porco.jpeg');"></div>
-        <div class="image thumbnail" style="background-image: url('imagens/trator.jpeg');"></div>
-        <div class="image thumbnail" style="background-image: url('imagens/vaca.jpeg');"></div>
-        <div class="image thumbnail" style="background-image: url('imagens/vacas.jpeg');"></div>
-         <div class="image thumbnail" style="background-image: url('imagens/trator.jpeg');"></div>
-        <div class="image thumbnail" style="background-image: url('imagens/vaca.jpeg');"></div>
-        <div class="image thumbnail" style="background-image: url('imagens/vacas.jpeg');"></div>
-
-
-
+    <div class="playlist">
+        <ul id="playlist">
+            <li>Love Will Tear Us Apart</li>
+            <li>Transmission</li>
+            <li>Disorder</li>
+            <li>She's Lost Control</li>
+            <li>New Dawn Fades</li>
+            <li>Shadowplay</li>
+            <li>Isolation</li>
+            <li>Heart and Soul</li>
+            <li>Dead Souls</li>
+            <li>Twenty Four Hours</li>
+        </ul>
+    <div class="music-info">
+        <p id="current-song">Nome da Música</p>
     </div>
-    <div class="overlay">
-        <span class="close-btn">&times;</span> <img class="overlay-image" src="" alt="">
-        <button class="prev-btn">Anterior</button>
 
-        <button class="next-btn">Próxima</button>
-    </div>
-    <footer class="footer">
-        <p>&copy; 2023 Galeria Visita Técnica | Todos os direitos reservados.</p>
-    </footer>
     <script src="script.js"></script>
 </body>
 
